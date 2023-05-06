@@ -1,0 +1,52 @@
+header {
+    background-color: #BBBBBB;
+}
+
+.barraInicio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #bbbbbb;
+   
+}
+
+.logo {
+    width: 8%;
+    margin: 5px 10px;
+}
+
+.espacio {
+    flex: 1;
+  }
+
+.opciones {
+    display: inline-flex;
+    align-items: center;
+}
+
+nav {
+    position: inline-flex;
+    
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+    padding-right: 10px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.banner {
+    width: 100%;
+}
