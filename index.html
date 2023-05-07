@@ -1,34 +1,54 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <title>TPO - Desarrollo Web</title>
+    <title>Document</title>
 </head>
+    <link rel="stylesheet" href="style.css">
 <body>
-    <header>
-        <div class="barraInicio">
-            <img class="logo" src="imagenes/logo.png" alt="logo de automovil">
-            <span>TPO - Desarrollo</span>
-            <div class="espacio"></div>
-            <div class="opciones">
-                <nav>
-                    <ul>
-                        <li><a href="">Nosotros</a></li>
-                        <li><a href="">Servicio</a></li>
-                        <li><a href="">Clientes</a></li>
-                        <li><a href="">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <section>
+        <img src="C:\Estudio\Curso 4.0 Python\tpo\img\gol.jpg" height="450px" width="600px" alt="gol">
+        <img src="C:\Estudio\Curso 4.0 Python\tpo\img\corolla cross.jpg" height="450px" width="600px" alt="corolla cross">
+        <img src="C:\Estudio\Curso 4.0 Python\tpo\img\amarok.jpg" height="450px" width="600px" alt="amarok">
+        <img src="C:\Estudio\Curso 4.0 Python\tpo\img\vito.jpg" height="450px" width="600px" alt="vito">
+        <img src="C:\Estudio\Curso 4.0 Python\tpo\img\camion.jpeg" height="450px" width="600px" alt="camion">
+    </section>
+    <div class="barraInicio">
+        <img class="logo" src="imagenes/logo.png" alt="logo de automovil">
+        <span>TPO - Desarrollo</span>
+        <div class="espacio"></div>
+        <div class="opciones">
+            <nav>
+                <ul>
+                    <li><a href="">Nosotros</a></li>
+                    <li><a href="">Servicio</a></li>
+                    <li><a href="">Clientes</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-    </header>
-    <div>
-        <img class="banner" src="imagenes/abriendo-puerta.jpg" alt="imagen de mujer abriendo puerta de auto">
     </div>
+    <div id="after_submit"></div>
+<form id="contacto_form" action="#" method="POST" enctype="multipart/form-data">
+  <div class="row">
+    <label class="required" for="nombre">Nombre y Apellido</label><br />
+    <input id="nombre" class="input" name="nombre" type="text" value="" size="30" /><br />
+    <span id="nombre_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="email"> Email:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="message">Mensaje/consulta:</label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    <span id="mensaje_validation" class="error_message"></span>
+  </div>
     
+    <input id="submit_button" type="submit" value="Enviar Mail" />
+</form>
 </body>
 </html>

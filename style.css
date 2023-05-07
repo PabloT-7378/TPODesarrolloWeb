@@ -1,7 +1,26 @@
+section{
+    margin: 0 auto;
+    display:flex;
+    width: 800px;
+    height:450;
+}
+section img{
+    width: 0px;
+    flex-grow:1;
+    object-fit: cover;
+    opacity: 8;
+    transition: .5s ease;
+}
+section img:hover{
+    cursor:crosshair;
+    width: 600px;
+    height:600px;
+    opacity: 1;
+    filter: contrast(120%);
+}
 header {
     background-color: #BBBBBB;
 }
-
 .barraInicio {
     position: absolute;
     top: 0;
@@ -13,32 +32,26 @@ header {
     background-color: #bbbbbb;
    
 }
-
 .logo {
     width: 8%;
     margin: 5px 10px;
 }
-
 .espacio {
     flex: 1;
   }
-
 .opciones {
     display: inline-flex;
     align-items: center;
 }
-
 nav {
     position: inline-flex;
     
 }
-
 nav li {
     display: inline;
     margin: 0 0 0 15px;
     padding-right: 10px;
 }
-
 nav a {
     text-transform: uppercase;
     color: #000000;
@@ -46,7 +59,6 @@ nav a {
     font-size: 10px;
     text-decoration: none;
 }
-
 .banner {
     width: 100%;
 }
