@@ -14,12 +14,12 @@ section img{
 section img:hover{
     cursor:crosshair;
     width: 600px;
-    height:600px;
+    height:450px;
     opacity: 1;
     filter: contrast(120%);
 }
 header {
-    background-color: #BBBBBB;
+    background-color: #110f0f;
 }
 .barraInicio {
     position: absolute;
@@ -29,8 +29,7 @@ header {
     height: 40px;
     display: flex;
     align-items: center;
-    background-color: #bbbbbb;
-   
+    background-color: #8c2121;
 }
 .logo {
     width: 8%;
@@ -38,14 +37,13 @@ header {
 }
 .espacio {
     flex: 1;
-  }
+}
 .opciones {
     display: inline-flex;
     align-items: center;
 }
 nav {
     position: inline-flex;
-    
 }
 nav li {
     display: inline;
@@ -61,4 +59,14 @@ nav a {
 }
 .banner {
     width: 100%;
+}
+
+.social{
+	opacity: 0.5;
+    width:150px;
+	position:fixed;
+	right:0;
+	top:50%;
+	height:205px;
+	margin-top:250px;
 }
