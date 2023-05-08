@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ubicacion</title>
+    <!-- Link Para CSS   -->
+    <link rel="stylesheet" href="./css/ubicacion.css">
+    <!-- Boxicons Iconos No Tan Basicos-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    
+    <!-- Barra De Navegación De Prueba-->
+    <header>
+        <div class="nav container">
+            <!-- Icono Del Menu-->
+            <i class='bx bx-menu-alt-left' id="menu-icono"></i>
+            <!-- Logo Del Menu-->
+            <a href="#" class="logo">TPO - <span>Desarrollo</span></a>
+            <!-- Contenidos Del Menu-->
+
+            <ul class="navbar">
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <img src="imagenes\maps.png" height="15px" width="15px" alt="maps">
+                    <a href="ubicacion.html" class="active">Ubicacion</a>
+                </li>
+
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="./servicio.html">Servicio</a></li>
+                <li><a href="#">Clientes</a></li>
+
+                <li>
+                    <img src="imagenes\whatsapp.png" height="15px" width="15px" alt="Whatsapp">
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+
+            <!-- Icono Del Buscador -->
+            <i class='bx bx-search-alt' id="buscador-icono"></i>
+            <!-- Cuadro Del Buscador-->
+            <div class="buscador-caja container">
+                <input type="search" name="" id="" placeholder="Buscador De Vehículo De Transporte...">
+            </div>
+        </div>
+    </header>
+    <script src="./js/servicio.js"></script>
 </body>
+
 </html>
