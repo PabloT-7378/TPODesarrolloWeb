@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alquiler de Vehiculos</title>
 </head>
-    <link rel="stylesheet" href="css\style.css">
+<link rel="stylesheet" href="css/formulario.css">    
+<link rel="stylesheet" href="css\style.css">
     <link rel="icon" href="imagenes\logo_pesta.png" height="15px" width="15px" alt="maps">
 <body>
+    <main>
     <section>
         <img src="imagenes\gol.jpg" height="450px" width="600px" alt="gol">
         <img src="imagenes\corolla cross.jpg" height="450px" width="600px" alt="corolla cross">
@@ -32,20 +34,55 @@
             </nav>
         </div>
     </div>
+    <h3>Coloque sus datos y nos comunicaremos a la brevedad para responder todas sus consultas:</h3><br><br>
     <div id="after_submit"></div>
-<form id="contacto_form" action="#" method="POST" enctype="multipart/form-data">
-  <div class="row">
-    <label class="required" for="nombre">Nombre y Apellido</label><br />
-    <input id="nombre" class="input" name="nombre" type="text" value="" size="30" /><br />
-    <span id="nombre_validation" class="error_message"></span>
-    <label class="required" for="email"> Email:</label><br />
-    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-    <span id="email_validation" class="error_message"></span>
-    <label class="required" for="message">Mensaje/consulta:</label><br />
-    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-    <span id="mensaje_validation" class="error_message"></span>
-    <input id="submit_button" type="submit" value="Enviar Mail" />
-  </div>
+    <form action="" class="formulario" id="formulario">
+        <!-- Grupo: Nombre -->
+        <div class="formulario__grupo" id="grupo__nombre">
+            <label for="nombre" class="formulario__label">Nombre</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+        </div>
+        <!-- Grupo: Correo Electronico -->
+        <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo" class="formulario__label">Correo Electrónico</label>
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+        </div>
+
+        <!-- Grupo: Teléfono -->
+        <div class="formulario__grupo" id="grupo__telefono">
+            <label for="telefono" class="formulario__label">Teléfono</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+        </div>
+
+        <!-- Grupo: Terminos y Condiciones -->
+        <div class="formulario__grupo" id="grupo__terminos">
+            <label class="formulario__label">
+                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                Acepto los Terminos y Condiciones
+            </label>
+        </div>
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+        </div>
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+        </div>
+    </form>
   <div class="social">
     <h5>Nuestras Redes Sociales</h5>
     <a href="http://www.facebook.com"><img src="imagenes/facebook.png" height="30px" width="30px" alt="facebook"></a>
@@ -56,5 +93,7 @@
     <h3>Alquiler de Autos ARGENTINA</h3>
     <h4>Al mejor precio. Conozca el confort y seguridad que brindamos en el alquiler de nuestros auto</h4>
   </form>
+  </main>
+  <script src="js/formulario.js"></script>
  </body>
 </html>
