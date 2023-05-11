@@ -1,99 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alquiler de Vehiculos</title>
-</head>
-<link rel="stylesheet" href="css/formulario.css">    
-<link rel="stylesheet" href="css\style.css">
+    <!-- Link Para CSS   -->
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="imagenes\logo_pesta.png" height="15px" width="15px" alt="maps">
+
+    <!-- Boxicons Iconos No Tan Basicos-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
 <body>
+    <!-- Barra De Navegación De Prueba-->
+    <header>
+        <div class="nav container">
+            <!-- Icono Del Menu-->
+            <i class='bx bx-menu-alt-left' id="menu-icono"></i>
+            <!-- Logo Del Menu-->
+            <a href="#" class="logo">TPO - <span>Desarrollo</span></a>
+            <!-- Contenidos Del Menu-->
+
+            <ul class="navbar">
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <img src="imagenes\maps.png" height="15px" width="15px" alt="maps">
+                    <a href="ubicacion.html">Ubicacion</a>
+                </li>
+
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./servicio.html" class="active">Servicio</a></li>
+                <li><a href="#">Clientes</a></li>
+
+                <li>
+                    <img src="imagenes\whatsapp.png" height="15px" width="15px" alt="Whatsapp">
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+
+            <!-- Icono Del Buscador -->
+            <i class='bx bx-search-alt' id="buscador-icono"></i>
+            <!-- Cuadro Del Buscador-->
+            <div class="buscador-caja container">
+                <input type="search" name="" id="" placeholder="Buscador De Vehículo De Transporte...">
+            </div>
+        </div>
+    </header>
     <main>
-    <section>
-        <img src="imagenes\gol.jpg" height="450px" width="600px" alt="gol">
-        <img src="imagenes\corolla cross.jpg" height="450px" width="600px" alt="corolla cross">
-        <img src="imagenes\amarok.jpg" height="450px" width="600px" alt="amarok">
-        <img src="imagenes\vito.jpg" height="450px" width="600px" alt="vito">
-        <img src="imagenes\camion.jpeg" height="450px" width="600px" alt="camion">
-    </section>
-    <div class="barraInicio">
-        <img class="logo" src="imagenes/logo.png" alt="logo de automovil">
-        <span>TPO - Desarrollo</span>
-        <div class="espacio"></div>
-        <div class="opciones">
-            <nav>
-                <ul>
-                    <li><img src="imagenes\maps.png" height="15px" width="15px" alt="maps"><a href="ubicacion.html">  Ubicacion</a></li>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="./servicio.html">Servicio</a></li>
-                    <li><a href="">Clientes</a></li>
-                    <li><img src="imagenes\whatsapp.png" height="15px" width="15px" alt="Whatsapp"><a href="contacto.html">  Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <h3>Coloque sus datos y nos comunicaremos a la brevedad para responder todas sus consultas:</h3><br><br>
-    <div id="after_submit"></div>
-    <form action="" class="formulario" id="formulario">
-        <!-- Grupo: Nombre -->
-        <div class="formulario__grupo" id="grupo__nombre">
-            <label for="nombre" class="formulario__label">Nombre</label>
-            <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan Topo">
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        <section>
+            <img src="imagenes\gol.jpg" height="450px" width="600px" alt="gol">
+            <img src="imagenes\corolla cross.jpg" height="450px" width="600px" alt="corolla cross">
+            <img src="imagenes\amarok.jpg" height="450px" width="600px" alt="amarok">
+            <img src="imagenes\vito.jpg" height="450px" width="600px" alt="vito">
+            <img src="imagenes\camion.jpeg" height="450px" width="600px" alt="camion">
+        </section>
+        <h3>Coloque sus datos y nos comunicaremos a la brevedad para responder todas sus consultas:</h3><br><br>
+        <div id="after_submit"></div>
+        <form action="" class="formulario" id="formulario">
+            <!-- Grupo: Nombre -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan Topo">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
             </div>
-            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
-        </div>
-        <!-- Grupo: Correo Electronico -->
-        <div class="formulario__grupo" id="grupo__correo">
-            <label for="correo" class="formulario__label">Correo Electrónico</label>
-            <div class="formulario__grupo-input">
-                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@gmail.com">
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            <!-- Grupo: Correo Electronico -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@gmail.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
             </div>
-            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
-        </div>
-
-        <!-- Grupo: Teléfono -->
-        <div class="formulario__grupo" id="grupo__telefono">
-            <label for="telefono" class="formulario__label">Teléfono</label>
-            <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="1564789858">
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+    
+            <!-- Grupo: Teléfono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="1564789858">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
             </div>
-            <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+    
+            <!-- Grupo: Terminos y Condiciones -->
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los Terminos y Condiciones
+                </label>
+            </div>
+    
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+            </div>
+    
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+        </form>
+        <div class="social">
+                <h5>Nuestras Redes Sociales</h5>
+                <a href="http://www.facebook.com"><img src="imagenes/facebook.png" height="30px" width="30px" alt="facebook"></a>
+                <a href="http://www.youtube.com"><img src="imagenes/youtube.png" height="30px" width="30px" alt="youtube"></a>
+                <a href="http://www.twitter.com"><img src="imagenes/twitter.png" height="30px" width="30px" alt="twitter"></a>
+                <a href="http://www.instagram.com"><img src="imagenes/instagram.png" height="30px" width="30px" alt="instagram"></a>
         </div>
-
-        <!-- Grupo: Terminos y Condiciones -->
-        <div class="formulario__grupo" id="grupo__terminos">
-            <label class="formulario__label">
-                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-                Acepto los Terminos y Condiciones
-            </label>
-        </div>
-
-        <div class="formulario__mensaje" id="formulario__mensaje">
-            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-        </div>
-
-        <div class="formulario__grupo formulario__grupo-btn-enviar">
-            <button type="submit" class="formulario__btn">Enviar</button>
-            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-        </div>
+            <h3>Alquiler de Autos ARGENTINA</h3>
+            <h4>Al mejor precio. Conozca el confort y seguridad que brindamos en el alquiler de nuestros auto</h4>
     </form>
-  <div class="social">
-    <h5>Nuestras Redes Sociales</h5>
-    <a href="http://www.facebook.com"><img src="imagenes/facebook.png" height="30px" width="30px" alt="facebook"></a>
-    <a href="http://www.youtube.com"><img src="imagenes/youtube.png" height="30px" width="30px" alt="youtube"></a>
-    <a href="http://www.twitter.com"><img src="imagenes/twitter.png" height="30px" width="30px" alt="twitter"></a>
-    <a href="http://www.instagram.com"><img src="imagenes/instagram.png" height="30px" width="30px" alt="instagram"></a>
-  </div>
-    <h3>Alquiler de Autos ARGENTINA</h3>
-    <h4>Al mejor precio. Conozca el confort y seguridad que brindamos en el alquiler de nuestros auto</h4>
-  </form>
-  </main>
-  <script src="js/formulario.js"></script>
- </body>
+    </main>
+    <script src="js/formulario.js"></script>
+    <script src="./js/servicio.js"></script>
+</body>
+
 </html>
