@@ -1,0 +1,285 @@
+/* Fuente De Google Creo Que Estaba Permitido */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Variables De CSS*/
+:root {
+    --main-color: #4a4df8;
+    --text-color: #020102;
+    --bg-color: #cac4c4;
+}
+
+/* esto da error el img todavia
+img{
+    width: 100%;
+}
+*/
+
+body {
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: block;
+    width: 100%;
+    background-color: #BBBBBB;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
+#menu-icono {
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+    display: none;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--text-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+#buscador-icono {
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(68, 50, 50);
+}
+
+.buscador-caja {
+
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px 20px rgb(15 54 55 /10%);
+    border: 1px solid var(--main-color);
+    border-radius: 0.5rem;
+    clip-path: circle(0% at 100% 0%);
+}
+
+.buscador-caja.active {
+    clip-path: circle(144% at 100% 0%);
+    transition: 0.4s;
+}
+
+.buscador-caja input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    font-size: 1rem;
+}
+
+/*estilos clientes*/
+.comentarios {
+    background-color: #f2f2f2;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .comentarios h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .comentarios p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  
+  .comentarios a {
+    color: var(--main-color);
+    font-weight: 500;
+  }
+  
+  .comentarios a:hover {
+    text-decoration: underline;
+  }
+
+  .comentario {
+    background-color: #f5f5f5;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+  }
+  
+  .comentario h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .comentario p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  
+  .comentario small {
+    font-size: 0.8rem;
+    color: #808080;
+  }
+  
+
+
+
+/*Botones*/
+button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none; 
+    cursor: pointer; 
+  }
+  
+  button:hover {
+    background-color: #3e8e41; /* Color de fondo en hover */
+  }
+
+  .controls-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+  }
+  
+  
+
+/* Responsive */
+
+@media(max-width:1080px) {
+    .container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media(max-width:991px) {
+    .nav {
+        padding: 15px 20px;
+    }
+
+    section {
+        padding: 3rem 0 1rem;
+    }
+}
+
+@media(max-width:920px) {
+    #buscador-icono {
+        color: var(--text-color)
+    }
+}
+
+@media(max-width:768px) {
+    .buscador-caja input {
+        padding: 15px;
+    }
+
+    .nav {
+        padding: 10px 0;
+    }
+
+    #menu-icono {
+        display: initial;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+        text-align: center;
+        box-shadow: 4px 4px 20px rgb(15 54 55 /20%);
+        background: var(--bg-color);
+        clip-path: circle(0% at 0% 0%);
+        transition: 0.6s;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 15px;
+    }
+
+    .navbar a:hover,
+    .navbar .active {
+        border-bottom: none;
+        background: var(--main-color);
+        color: var(--bg-color);
+    }
+
+    .navbar.active{
+        clip-path: circle(144% at 0% 0%);
+    }
+}
+
+@media(max-width:727px){
+    .heading span{
+        font-size: 0.9rem;
+    }
+    .heading h2{
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:360px){
+    .buscador-caja input{
+        padding: 11px;
+    }
+}
