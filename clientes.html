@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <!-- Link Para CSS   -->
+    <link rel="stylesheet" href="./css/clientes.css">
+    <link rel="icon" href="imagenes\logo_pesta.png" height="15px" width="15px" alt="maps">
+    <!-- Boxicons Iconos No Tan Basicos-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--JS-->
+    <script src="js/clientes.js"></script>
+</head>
+
+<body>
+    <!-- Barra De Navegación De Prueba-->
+    <header>
+        <div class="nav container">
+            <!-- Icono Del Menu-->
+            <i class='bx bx-menu-alt-left' id="menu-icono"></i>
+            <!-- Logo Del Menu-->
+            <a href="#" class="logo">TPO - <span>Desarrollo</span></a>
+            <!-- Contenidos Del Menu-->
+
+            <ul class="navbar">
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <img src="imagenes\maps.png" height="15px" width="15px" alt="maps">
+                    <a href="ubicacion.html">Ubicacion</a>
+                </li>
+
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./servicio.html">Servicio</a></li>
+                <li><a href="./clientes.html" class="active">Clientes</a></li>
+
+                <li>
+                    <img src="imagenes\whatsapp.png" height="15px" width="15px" alt="Whatsapp">
+                    <a href="contacto.html" >Contacto</a>
+                </li>
+            </ul>
+
+            <!-- Icono Del Buscador -->
+            <i class='bx bx-search-alt' id="buscador-icono"></i>
+            <!-- Cuadro Del Buscador-->
+            <div class="buscador-caja container">
+                <input type="search" name="" id="" placeholder="Buscador De Vehículo De Transporte...">
+            </div>
+        </div>
+    </header>
+
+    <section id="clientes">
+      <h2>Opiniones de nuestros clientes</h2>
+      <div class="comentarios">
+        <div class="comentario" id="comentario-1">
+          <p>"Me encantó el servicio que brindan, siempre atentos a mis necesidades. Además, los vehículos son de alta calidad y muy cómodos."</p>
+          <h3>Juan Carlos</h3>
+        </div>
+        <div class="comentario" id="comentario-2">
+          <p>"Excelente atención al cliente, siempre responden a mis dudas de manera rápida y eficiente. Muy recomendable."</p>
+          <h3>Lucas</h3>
+        </div>
+        <div class="comentario" id="comentario-3">
+          <p>"Los precios son muy competitivos y la calidad de los vehículos es insuperable. Sin duda volvería a elegirlos."</p>
+          <h3>Emilia</h3>
+        </div>
+        <div class="comentario" id="comentario-4">
+          <p>"Me encantó el servicio al cliente, siempre disponibles y dispuestos a ayudar en lo que necesitaba. Además, la flota de vehículos es amplia y variada, lo que me permitió encontrar el vehículo ideal para mi viaje."</p>
+          <h3>Jorge</h3>
+        </div>
+        <div class="controls-container">
+          <div class="controls">
+            <button id="prev-btn">&lt;</button>
+            <button id="next-btn">&gt;</button>
+          </div>
+        </div>
+      </div>
+  </section>
+
+</body>
+
+</html>
