@@ -7,7 +7,7 @@
     <title>Contacto</title>
         <!-- Link Para CSS   -->
         <link rel="stylesheet" href="./css/contacto.css">
-        <link rel="icon" href="imagenes\logo_pesta.png" height="15px" width="15px" alt="maps">
+        <link rel="icon" href="imagenes/logo_pesta.png" height="15px" width="15px" alt="maps">
         <!-- Boxicons Iconos No Tan Basicos-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -18,7 +18,7 @@
             <!-- Icono Del Menu-->
             <i class='bx bx-menu-alt-left' id="menu-icono"></i>
             <!-- Logo Del Menu-->
-            <a href="#" class="logo">TPO - <span>Desarrollo</span></a>
+            <a href="#" class="logo">Alquiler de Vehiculos - <span>CAC</span></a>
             <!-- Contenidos Del Menu-->
 
             <ul class="navbar">
@@ -26,7 +26,7 @@
                     <a href="./index.html">Inicio</a>
                 </li>
                 <li>
-                    <img src="imagenes\maps.png" height="15px" width="15px" alt="maps">
+                    <img src="imagenes/maps.png" height="15px" width="15px" alt="maps">
                     <a href="./ubicacion.html">Ubicacion</a>
                 </li>
 
@@ -35,7 +35,7 @@
                 <li><a href="./clientes.html">Clientes</a></li>
 
                 <li>
-                    <img src="imagenes\whatsapp.png" height="15px" width="15px" alt="Whatsapp">
+                    <img src="imagenes/whatsapp.png" height="15px" width="15px" alt="Whatsapp">
                     <a href="contacto.html" class="active">Contacto</a>
                 </li>
             </ul>
@@ -48,7 +48,68 @@
             </div>
         </div>
     </header>
-    <console class="log">Telefono de contaco/mail/etc</console>
-    <script src="./js/servicio.js"></script>
+    <main>
+        <h3>Coloque sus datos y nos comunicaremos a la brevedad para responder todas sus consultas:</h3><br><br>
+        <div id="after_submit"></div>
+        <form action="" class="formulario" id="formulario">
+            <!-- Grupo: Nombre -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan Topo">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+            </div>
+            <!-- Grupo: Correo Electronico -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@gmail.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+            </div>
+    
+            <!-- Grupo: Teléfono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="1564789858">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+            </div>
+    
+            <!-- Grupo: Terminos y Condiciones -->
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los Terminos y Condiciones
+                </label>
+            </div>
+    
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+            </div>
+    
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+        </form>
+    </main>
+    <div class="social">
+        <h5>Nuestras Redes Sociales</h5>
+        <a href="http://www.facebook.com"><img src="/imagenes/facebook.png" height="20px" width="20px" alt="facebook"></a>
+        <a href="http://www.youtube.com"><img src="/imagenes/youtube.png" height="20px" width="20px" alt="youtube"></a>
+        <a href="http://www.twitter.com"><img src="/imagenes/twitter.png" height="20px" width="20px" alt="twitter"></a>
+        <a href="http://www.instagram.com"><img src="/imagenes/instagram.png" height="20px" width="20px" alt="instagram"></a>
+    </div>
+    <footer>
+        <img src="/imagenes/logo.png" alt="logo de auto">
+        <p class="copyright">&copy Copyright Alquiler de Vehiculos CAC - 2023</p>
+    </footer>
+    <script src="js/contacto.js"></script>
 </body>
 </html>
