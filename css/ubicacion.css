@@ -203,3 +203,21 @@ header {
         padding: 11px;
     }
 }
+
+iframe {
+    width: 600px;
+    height: 450px; 
+    border: 0;
+}
+
+/*footer*/
+
+footer {
+    text-align: center;
+    background: #BBBBBB;
+    padding: 20px;
+}
+
+footer img {
+    width: 10%;
+}
