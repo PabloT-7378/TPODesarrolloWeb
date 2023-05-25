@@ -353,7 +353,7 @@ section{
     margin: 100px 200px ;
     display:flex;
     width: 800px;
-    height:450;
+    height:450px;
 }
 section img{
     width: 150px;
@@ -370,14 +370,54 @@ section img:hover{
     filter: contrast(120%);
 }
 
+/* sobre nosotros */
+h2 {
+    text-align: center;
+}
+
+.sobre-nosotros {
+    padding: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+#objetivo {
+    font-size: 22px;
+}
+
+.imagen {
+    text-align: center;
+}
+
+.imagenBanner {
+    width: 50%;
+    
+}
+
 /*------------------------------------------*social*/
 
 .social{
 	opacity: 0.5;
-    width:150px;
-	position:fixed;
-	right:0;
-	top:50%;
+    /* width:150px; */
+	position: relative;
+    text-align: right;
+    margin-right: 10px;
+	/* right:5px; */
+	/* top:50%;
 	height:205px;
-	margin-top:250px;
+	margin-top:250px; */
+}
+
+/*footer*/
+
+footer {
+    text-align: center;
+    background: #BBBBBB;
+    padding: 20px;
+}
+
+footer img {
+    width: 10%;
 }
