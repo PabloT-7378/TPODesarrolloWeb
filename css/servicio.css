@@ -338,3 +338,15 @@ header {
         padding: 11px;
     }
 }
+
+/*footer*/
+
+footer {
+    text-align: center;
+    background: #BBBBBB;
+    padding: 20px;
+}
+
+footer img {
+    width: 10%;
+}
