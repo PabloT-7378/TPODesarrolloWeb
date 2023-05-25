@@ -283,3 +283,21 @@ button {
         padding: 11px;
     }
 }
+
+/* video de youtube */
+
+iframe {
+    text-align: center;
+}
+
+/*footer*/
+
+footer {
+    text-align: center;
+    background: #BBBBBB;
+    padding: 20px;
+}
+
+footer img {
+    width: 10%;
+}
