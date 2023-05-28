@@ -46,7 +46,7 @@ inputs.forEach((input) => {
 	input.addEventListener('blur', validarFormulario);
 });
 formulario.addEventListener('submit', (e) => {
-	// e.preventDefault();
+	e.preventDefault();
 	
 	const terminos = document.getElementById('terminos');
 	if(campos.nombre && campos.correo && campos.telefono && terminos.checked ){
@@ -64,23 +64,3 @@ formulario.addEventListener('submit', (e) => {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
 });
-
-// implementacion de api-rest
-
-const form = document.querySelector('formulario')
-
-
-formulario.addEventListener('submit',handleSubmit)
-
-async function handleSubmit(event) {
-    event.preventDefault();
-    const form = new FormData(this)
-    const response = await fetch(this.action, {
-        method: this.method,
-        body: form,
-        headers: {
-            'Accept': 'application/json'
-        }
-    })
-
-}
