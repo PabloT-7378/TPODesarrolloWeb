@@ -46,8 +46,8 @@ inputs.forEach((input) => {
 	input.addEventListener('blur', validarFormulario);
 });
 formulario.addEventListener('submit', (e) => {
-	e.preventDefault();
-
+	// e.preventDefault();
+	
 	const terminos = document.getElementById('terminos');
 	if(campos.nombre && campos.correo && campos.telefono && terminos.checked ){
 		formulario.reset();
@@ -65,30 +65,12 @@ formulario.addEventListener('submit', (e) => {
 	}
 });
 
-let busqueda = document.querySelector(".buscador-caja");
-
-document.querySelector("#buscador-icono").onclick = () => {
-    busqueda.classList.toggle("active");
-    menu.classList.remove("active");
-}
-
-let menu = document.querySelector(".navbar");
-
-document.querySelector("#menu-icono").onclick = () => {
-    menu.classList.toggle("active");
-    busqueda.classList.remove("active");
-}
-
-window.onscroll=()=>{
-    busqueda.classList.remove("active");
-    menu.classList.remove("active");
-}
-
 // implementacion de api-rest
 
-const $formulario = document.querySelector('#formulario')
+const form = document.querySelector('formulario')
 
-$formulario.addEventListener('submit',handleSubmit)
+
+formulario.addEventListener('submit',handleSubmit)
 
 async function handleSubmit(event) {
     event.preventDefault();

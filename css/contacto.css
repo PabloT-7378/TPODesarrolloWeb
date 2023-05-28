@@ -215,9 +215,20 @@ main {
 	padding: 40px;
 }
 
+.formulario__label {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
 .formulario__input {
 	width: 100%;
-    margin: 0 0 20px;
+    /* margin: 0 0 20px; */
 	background: #fff;
 	border: 3px solid transparent;
 	border-radius: 3px;
