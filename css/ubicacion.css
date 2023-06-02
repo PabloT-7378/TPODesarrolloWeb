@@ -126,6 +126,12 @@ header {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+    iframe {
+        width: 30rem;
+        height: 30rem; 
+        border: 0;
+    }
+
 }
 
 @media(max-width:991px) {
@@ -136,11 +142,21 @@ header {
     section {
         padding: 3rem 0 1rem;
     }
+    iframe {
+        width: 30rem;
+        height: 30rem; 
+        border: 0;
+    }
 }
 
 @media(max-width:920px) {
     #buscador-icono {
         color: var(--text-color)
+    }
+    iframe {
+        width: 30rem;
+        height: 30rem; 
+        border: 0;
     }
 }
 
@@ -187,6 +203,12 @@ header {
     .navbar.active{
         clip-path: circle(144% at 0% 0%);
     }
+    iframe {
+        width: 34rem;
+        height: 30rem; 
+        border: 0;
+    }
+
 }
 
 @media(max-width:727px){
@@ -196,19 +218,31 @@ header {
     .heading h2{
         font-size: 1.4rem;
     }
+
+    iframe {
+        width: 24rem;
+        height: 30rem; 
+        border: 0;
+    }
+    
+
 }
 
 @media(max-width:360px){
     .buscador-caja input{
         padding: 11px;
     }
+    iframe {
+        width: 20rem;
+        height: 30rem; 
+        border: 0;
+    }
+    
+    
+
 }
 
-iframe {
-    width: 600px;
-    height: 450px; 
-    border: 0;
-}
+
 
 /*footer*/
 

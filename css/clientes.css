@@ -276,6 +276,12 @@ button {
     .heading h2{
         font-size: 1.4rem;
     }
+    iframe {
+        width: 24rem;
+        height: 30rem; 
+        border: 0;
+    }
+    
 }
 
 @media(max-width:360px){
