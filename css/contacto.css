@@ -314,6 +314,11 @@ main {
 	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
 }
 
+.formulario__mensaje-error {
+    font-size: 14px;
+    color: red;
+}
+
 .formulario__mensaje-exito {
 	font-size: 14px;
 	color: #119200;

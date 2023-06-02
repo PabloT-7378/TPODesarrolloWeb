@@ -89,13 +89,7 @@
         <div class="formulario__grupo" id="grupo__nombre">
           <label for="nombre" class="formulario__label">Nombre y Apellido</label>
           <div class="formulario__grupo-input">
-            <input
-              type="text"
-              class="formulario__input"
-              name="nombre"
-              id="nombre"
-              placeholder="Juan Topo"
-            />
+            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan Topo" required/>
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
           <p class="formulario__input-error">
@@ -105,17 +99,9 @@
         </div>
         <!-- Grupo: Correo Electronico -->
         <div class="formulario__grupo" id="grupo__correo">
-          <label for="correo" class="formulario__label"
-            >Correo Electrónico</label
-          >
+          <label for="correo" class="formulario__label">Correo Electrónico</label>
           <div class="formulario__grupo-input">
-            <input
-              type="email"
-              class="formulario__input"
-              name="correo"
-              id="correo"
-              placeholder="correo@gmail.com"
-            />
+            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@gmail.com" required/>
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
           <p class="formulario__input-error">
@@ -128,13 +114,7 @@
         <div class="formulario__grupo" id="grupo__telefono">
           <label for="telefono" class="formulario__label">Teléfono</label>
           <div class="formulario__grupo-input">
-            <input
-              type="text"
-              class="formulario__input"
-              name="telefono"
-              id="telefono"
-              placeholder="1564789858"
-            />
+            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="1564789858" required/>
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
           <p class="formulario__input-error">
@@ -145,21 +125,13 @@
         <!-- Grupo: Terminos y Condiciones -->
         <div class="formulario__grupo" id="grupo__terminos">
           <label class="formulario__label">
-            <input
-              class="formulario__checkbox"
-              type="checkbox"
-              name="terminos"
-              id="terminos"
-            />
+            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos" required/>
             Acepto los Terminos y Condiciones
           </label>
         </div>
 
-        <div class="formulario__mensaje" id="formulario__mensaje">
-          <p>
-            <i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor
-            rellena el formulario correctamente.
-          </p>
+        <div class="formulario__mensaje-error" id="formulario__mensaje-error">
+          <!-- <p><i class="fas fa-exclamation-triangle"></i><b>Error:</b>Por favor rellena el formulario correctamente.</p> -->
         </div>
 
         <div class="formulario__grupo formulario__grupo-btn-enviar">
@@ -172,43 +144,17 @@
     </main>
     <div class="social">
       <h5>Nuestras Redes Sociales</h5>
-      <a href="http://www.facebook.com"
-        ><img
-          src="imagenes/facebook.png"
-          height="20px"
-          width="20px"
-          alt="facebook"
-      /></a>
-      <a href="http://www.youtube.com"
-        ><img
-          src="imagenes/youtube.png"
-          height="20px"
-          width="20px"
-          alt="youtube"
-      /></a>
-      <a href="http://www.twitter.com"
-        ><img
-          src="imagenes/twitter.png"
-          height="20px"
-          width="20px"
-          alt="twitter"
-      /></a>
-      <a href="http://www.instagram.com"
-        ><img
-          src="imagenes/instagram.png"
-          height="20px"
-          width="20px"
-          alt="instagram"
-      /></a>
+      <a href="http://www.facebook.com"><img src="imagenes/facebook.png" height="20px" width="20px" alt="facebook"/></a>
+      <a href="http://www.youtube.com"><img src="imagenes/youtube.png" height="20px" width="20px" alt="youtube"/></a>
+      <a href="http://www.twitter.com"><img src="imagenes/twitter.png" height="20px" width="20px" alt="twitter"/></a>
+      <a href="http://www.instagram.com"><img src="imagenes/instagram.png" height="20px" width="20px" alt="instagram"/></a>
     </div>
     <footer>
       <img src="imagenes/logo.png" alt="logo de auto" />
       <p class="copyright">&copy Copyright Alquiler de Vehiculos CAC - 2023</p>
     </footer>
     <script src="js/contacto.js"></script>
-    <script
-      src="https://kit.fontawesome.com/34a2a56733.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/34a2a56733.js" crossorigin="anonymous"></script>
+        
   </body>
 </html>
