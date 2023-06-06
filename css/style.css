@@ -33,7 +33,7 @@ header {
     display: block;
     width: 100%;
     background-color: #BBBBBB;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     z-index: 100;
@@ -140,6 +140,10 @@ header {
 }
 
 @media(max-width:768px) {
+    header {
+        position: fixed;
+    }
+
     .buscador-caja input {
         padding: 15px;
     }
